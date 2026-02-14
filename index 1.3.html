@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Novabloom Foundation 🌱</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+  .fade-in { opacity:0; transform:translateY(20px); transition: opacity 1s ease-out, transform 1s ease-out; }
+  .fade-in.visible { opacity:1; transform:translateY(0); }
+  html { scroll-behavior: smooth; }
+  .btn-hover:hover { box-shadow:0 4px 15px rgba(0,0,0,0.3); }
+  .card-hover:hover { transform: scale(1.05); }
+  #floatingSupportBtn { transition: transform 0.3s ease, box-shadow 0.3s ease; animation: pulse 2s infinite; }
+  #floatingSupportBtn:hover { transform: scale(1.05); box-shadow: 0 6px 20px rgba(0,0,0,0.3); animation: none; }
+  #whatsappChatBtn { animation: pulse 2s infinite; }
+  #whatsappChatBtn:hover { animation: none; transform: scale(1.05); }
+  @keyframes pulse { 0% { transform: scale(1); } 50% { transform: scale(1.05); } 100% { transform: scale(1); } }
+  header img { transition: transform 0.5s ease; }
+  header img:hover { transform: scale(1.1) rotate(-3deg); }
+  a[href="#googleForm"] { position: relative; transition: all 0.3s ease; }
+  a[href="#googleForm"]:hover { box-shadow: 0 0 15px 3px rgba(34,197,94,0.6); transform: scale(1.05); }
+</style>
+</head>
+<body class="bg-white text-gray-800">
+
+<!-- Header -->
+<header class="bg-yellow-700 text-white p-4 flex justify-between items-center fixed top-0 left-0 w-full z-50 shadow-md">
+  <div class="flex items-center space-x-2">
+    <img src="WhatsApp Image 2025-09-10 at 06.07.01 (1) - Copy.jpeg" alt="Novabloom Logo" class="h-12" />
+    <h1 class="text-5xl font-bold">Novabloom FOUNDATION 🌱</h1>
+  </div>
+  <nav class="hidden md:flex space-x-4">
+    <a href="#mission" class="hover:underline">Mission</a>
+    <a href="#vision" class="hover:underline">Vision</a>
+    <a href="#objectives" class="hover:underline">Objectives</a>
+    <a href="#values" class="hover:underline">Core Values</a>
+    <a href="#membership" class="hover:underline">Membership</a>
+    <a href="#events" class="hover:underline">Events</a>
+    <a href="#contact" class="hover:underline">Contact</a>
+  </nav>
+  <div class="md:hidden">
+    <button id="menu-btn" class="focus:outline-none" aria-label="Toggle Menu">
+      <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
+      </svg>
+    </button>
+  </div>
+</header>
+
+<!-- Mobile Menu -->
+<div id="mobile-menu" class="hidden bg-yellow-700 text-white flex flex-col space-y-2 p-4 md:hidden mt-24">
+  <a href="#mission" class="hover:underline">Mission</a>
+  <a href="#vision" class="hover:underline">Vision</a>
+  <a href="#objectives" class="hover:underline">Objectives</a>
+  <a href="#values" class="hover:underline">Core Values</a>
+  <a href="#membership" class="hover:underline">Membership</a>
+  <a href="#events" class="hover:underline">Events</a>
+  <a href="#contact" class="hover:underline">Contact</a>
+</div>
+
+<!-- Hero Section -->
+<section class="bg-green-100 py-40 text-center mt-24">
+  <h2 class="text-5xl md:text-6xl font-bold mb-4 fade-in">Novabloom FOUNDATION 🌱</h2>
+  <p class="text-lg max-w-xl mx-auto mb-6 fade-in">Empowering Vulnerable Youth and Families through Mentorship, Education, and Community Programs.</p>
+  <div class="flex justify-center space-x-4 fade-in">
+    <a href="#googleForm" class="bg-green-600 text-white px-6 py-3 rounded hover:bg-green-700 transition btn-hover">Join Us</a>
+    <a href="#payment" class="bg-yellow-600 text-white px-6 py-3 rounded hover:bg-yellow-700 transition btn-hover">Support Us Now</a>
+  </div>
+  <p class="mt-6 text-xl font-semibold fade-in max-w-2xl mx-auto">📖 Isaiah 58:10: “If you give yourself to the hungry and satisfy the afflicted soul, then your light will rise in darkness...”</p>
+</section>
+
+<!-- Mission & Vision -->
+<section class="py-20 px-4 md:px-20 grid md:grid-cols-2 gap-10">
+  <div id="mission" class="bg-white p-8 rounded shadow hover:shadow-lg transition fade-in card-hover border-2 border-yellow-400">
+    <h3 class="text-2xl font-semibold mb-4 text-yellow-600">✍️ Mission Statement</h3>
+    <p>To uplift and empower vulnerable youth and families through mentorship, education, and sustainable community-based programs.</p>
+  </div>
+  <div id="vision" class="bg-white p-8 rounded shadow hover:shadow-lg transition fade-in card-hover border-2 border-yellow-400">
+    <h3 class="text-2xl font-semibold mb-4 text-yellow-600">🗒️ Vision Statement</h3>
+    <p>A transformed generation where every young person thrives with purpose, dignity, and equal opportunity.</p>
+  </div>
+</section>
+
+<!-- Objectives -->
+<section id="objectives" class="py-20 px-4 md:px-20 fade-in">
+  <h3 class="text-3xl font-bold mb-6 text-center text-yellow-600">🎯 Objectives</h3>
+  <ul class="list-none space-y-4 max-w-3xl mx-auto">
+    <li class="bg-yellow-50 p-4 rounded shadow flex items-start space-x-3 card-hover">
+      <span class="text-yellow-600 text-2xl">🌟</span>
+      <p>To empower and mentor youths by providing guidance, life skills, and leadership training that helps them unlock their potential.</p>
+    </li>
+    <li class="bg-yellow-50 p-4 rounded shadow flex items-start space-x-3 card-hover">
+      <span class="text-yellow-600 text-2xl">📚</span>
+      <p>To promote education through mentorship and awareness by visiting schools, motivating students, and offering career guidance to help them stay focused and inspired.</p>
+    </li>
+    <li class="bg-yellow-50 p-4 rounded shadow flex items-start space-x-3 card-hover">
+      <span class="text-yellow-600 text-2xl">💡</span>
+      <p>To drive community development and nurture talents by creating opportunities in creativity, innovation, and entrepreneurship that uplift young people.</p>
+    </li>
+  </ul>
+</section>
+
+<!-- Core Values -->
+<section id="values" class="py-20 px-4 md:px-20 fade-in">
+  <h3 class="text-3xl font-bold mb-6 text-center text-yellow-600">💡 Core Values</h3>
+  <div class="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto text-center">
+    <div class="bg-yellow-50 p-6 rounded shadow hover:shadow-lg transition font-semibold flex flex-col items-center space-y-2 card-hover"><span class="text-yellow-600 text-3xl">🛡️</span> Integrity</div>
+    <div class="bg-yellow-50 p-6 rounded shadow hover:shadow-lg transition font-semibold flex flex-col items-center space-y-2 card-hover"><span class="text-yellow-600 text-3xl">💪</span> Empowerment</div>
+    <div class="bg-yellow-50 p-6 rounded shadow hover:shadow-lg transition font-semibold flex flex-col items-center space-y-2 card-hover"><span class="text-yellow-600 text-3xl">❤️</span> Compassion</div>
+    <div class="bg-yellow-50 p-6 rounded shadow hover:shadow-lg transition font-semibold flex flex-col items-center space-y-2 card-hover"><span class="text-yellow-600 text-3xl">🏆</span> Excellence</div>
+    <div class="bg-yellow-50 p-6 rounded shadow hover:shadow-lg transition font-semibold flex flex-col items-center space-y-2 card-hover"><span class="text-yellow-600 text-3xl">🤝</span> Collaboration</div>
+    <div class="bg-yellow-50 p-6 rounded shadow hover:shadow-lg transition font-semibold flex flex-col items-center space-y-2 card-hover"><span class="text-yellow-600 text-3xl">💡</span> Innovation</div>
+  </div>
+</section>
+
+<!-- Membership Section -->
+<section id="membership" class="bg-yellow-50 py-20 px-4 md:px-20 fade-in">
+  <h3 class="text-3xl font-bold mb-6 text-center text-yellow-700">Membership & Registration</h3>
+  <p class="text-center mb-2 font-semibold">🔖 Registration Fee: KSh 500</p>
+
+  <!-- Google Form -->
+  <div id="googleForm" class="mt-6 max-w-2xl mx-auto fade-in">
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScrc3Dx53vCw7nSPs1NAGfPJ4Hu7zJI8CMj1dRbiD9XDclI8Q/viewform?embedded=true" width="100%" height="800" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+  </div>
+
+  <!-- Payment Section -->
+  <div id="payment" class="text-center mt-10 fade-in">
+    <p class="text-center mb-2 font-semibold">💰 Payment Method: Lipa na M-Pesa – Pochi la Biashara (0700877405)</p>
+    <p class="text-center mb-2 font-semibold">👕 Round Neck T-Shirts (White/Gold): KSh 750</p>
+    <p class="text-center mb-2 font-semibold">👔 Collared T-Shirts (White/Gold): KSh 900</p>
+  </div>
+</section>
+
+<!-- Events Section -->
+<section id="events" class="py-20 px-4 md:px-20 fade-in">
+  <h3 class="text-3xl font-bold mb-6 text-center text-green-700">📅 Events</h3>
+  <div id="eventsContainer" class="max-w-4xl mx-auto grid md:grid-cols-2 gap-6"></div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="bg-green-50 py-20 text-center fade-in">
+  <h3 class="text-3xl font-bold mb-6">Get in Touch</h3>
+  <p class="mb-4">📞 Phone: 0700877405</p>
+  <p class="mb-4">✉️ Email: <a href="mailto:wemaodhiambo@gmail.com" class="underline">wemaodhiambo@gmail.com</a></p>
+  <p>🏠 Address: Nairobi, Kenya</p>
+</section>
+
+<!-- Social Media Section -->
+<section id="social" class="py-10 bg-green-50 text-center fade-in">
+  <h3 class="text-3xl font-bold mb-6 text-yellow-700">Connect With Us</h3>
+  <div class="flex justify-center space-x-6 text-3xl">
+    <a href="https://www.instagram.com/wema_lcsm/" target="_blank" class="hover:text-pink-500">📸</a>
+    <a href="https://www.linkedin.com/in/wema-odhiambo-056097255/" target="_blank" class="hover:text-blue-700">🔗</a>
+    <a href="https://www.facebook.com/profile.php?id=100087942460172" target="_blank" class="hover:text-blue-600">📘</a>
+    <a href="https://www.tiktok.com/@illgsm" target="_blank" class="hover:text-black">🎵</a>
+    <a href="https://chat.whatsapp.com/KNxSbvXE6A4EPrcdtcpopY" target="_blank" class="hover:text-green-600">💬</a>
+  </div>
+</section>
+
+<!-- Floating Buttons -->
+<a href="#payment" id="floatingSupportBtn" class="fixed bottom-6 right-6 bg-yellow-600 text-white px-6 py-3 rounded-full shadow-lg hover:bg-yellow-700 transition z-50 flex items-center space-x-2">
+  <span>💛</span><span>Support Us</span>
+</a>
+
+<a href="https://wa.me/0700877405" target="_blank" id="whatsappChatBtn"
+   class="fixed bottom-6 left-6 bg-green-500 text-white px-4 py-3 rounded-full shadow-lg hover:bg-green-600 flex items-center space-x-2 z-50">
+  <span>💬</span><span>Chat with Us</span>
+</a>
+
+<!-- Back to Top Button -->
+<button id="backToTop" class="fixed bottom-24 right-6 bg-green-600 text-white px-4 py-2 rounded-full shadow-lg hidden hover:bg-green-700 transition">↑ Top</button>
+
+<!-- Footer -->
+<footer class="bg-yellow-700 text-white py-6 text-center">
+  <p>&copy; 2025 Novabloom Foundation. All rights reserved.</p>
+</footer>
+
+<!-- Scripts -->
+<script>
+  // Scroll animation
+  const faders = document.querySelectorAll('.fade-in');
+  const appearOptions = { threshold:0.2, rootMargin:"0px 0px -50px 0px" };
+  const appearOnScroll = new IntersectionObserver((entries, observer)=>{
+    entries.forEach(entry=>{
+      if(!entry.isIntersecting) return;
+      entry.target.classList.add('visible');
+      observer.unobserve(entry.target);
+    });
+  }, appearOptions);
+  faders.forEach(fader => appearOnScroll.observe(fader));
+
+  // Mobile menu toggle
+  const menuBtn = document.getElementById('menu-btn');
+  const mobileMenu = document.getElementById('mobile-menu');
+  menuBtn.addEventListener('click',()=>{ mobileMenu.classList.toggle('hidden'); });
+
+  // Back to Top Button
+  const backToTop = document.getElementById('backToTop');
+  window.addEventListener('scroll',()=>{
+    if(window.scrollY>300) backToTop.classList.remove('hidden');
+    else backToTop.classList.add('hidden');
+  });
+  backToTop.addEventListener('click',()=>{ window.scrollTo({top:0, behavior:'smooth'}); });
+
+  // Fetch events from Google Sheet CSV
+  const eventsContainer = document.getElementById('eventsContainer');
+  fetch("https://docs.google.com/spreadsheets/d/e/2PACX-1vT4TuLrkKFuYhLBVW1qyfuALgIS8IfmOzqWvL0EZYy8XzvaWjS5pc1696O0JQaFPNWzq3tPjvHDq8NP/pub?output=csv")
+    .then(response=>response.text())
+    .then(data=>{
+      const rows = data.split("\n").slice(1);
+      // Only add the manual future event
+      const futureEventCard = document.createElement("div");
+      futureEventCard.className="bg-white p-6 rounded shadow hover:shadow-lg transition card-hover border-2 border-yellow-500";
+      futureEventCard.innerHTML=`<h4 class="text-xl font-semibold mb-2">Novabloom FOUNDATION- YOUTH EMPOWERMENT CAMPAIGN</h4>
+                                 <p class="text-green-700 font-semibold">Saturday, 20 September · 11:00am – 1:00pm (Africa/Nairobi)</p>
+                                 <p class="mt-2">Google Meet: <a href="https://meet.google.com/rhj-ziew-tks" target="_blank" class="underline text-blue-600">Join Video Call</a></p>
+                                 <p>Current Members: 15-20</p>`;
+      eventsContainer.appendChild(futureEventCard);
+    });
+</script>
+</body>
+</html>
